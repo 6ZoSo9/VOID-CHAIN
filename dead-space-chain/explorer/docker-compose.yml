@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  blockscout-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: blockscout
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: blockscout
+    volumes:
+      - blockscout-db:/var/lib/postgresql/data
+  blockscout:
+    image: ghcr.io/blockscout/blockscout:latest
+    depends_on: [blockscout-db]
+    ports: ["4000:4000"]
+    environment:
+      DATABASE_URL: postgresql://blockscout:password@blockscout-db:5432/blockscout
+      ETHEREUM_JSONRPC_HTTP_URL: ${RPC_URL-http://localhost:8545}
+      ETHEREUM_JSONRPC_WS_URL: ${WS_URL-ws://localhost:8546}
+      NETWORK: ${NETWORK_NAME-Dead Space Chain}
+      CHAIN_ID: ${CHAIN_ID-54720}
+      INDEXER_DISABLE_PENDING_TRANSACTIONS: "true"
+volumes:
+  blockscout-db:

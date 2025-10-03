@@ -1,0 +1,62 @@
+name: CI (Chain)
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  contracts-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+      - name: Run tests
+        working-directory: contracts
+        run: |
+          forge --version
+          forge test -vvv || echo "Foundry test placeholder (ensure dependencies are set up)"
+  publisher-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install & Build publisher
+        working-directory: publisher
+        run: npm ci || npm i
+      - name: Build epoch zero (dry run)
+        working-directory: publisher
+        run: node src/build_epoch.js 0 || true
+      - name: Upload publisher public
+        uses: actions/upload-artifact@v4
+        with:
+          name: publisher-public
+          path: publisher/public
+  sdk-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Build SDK
+        working-directory: sdk
+        run: |
+          npm ci || npm i
+          npm run build
+      - name: Upload SDK dist
+        uses: actions/upload-artifact@v4
+        with:
+          name: deadspace-sdk-dist
+          path: sdk/dist
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

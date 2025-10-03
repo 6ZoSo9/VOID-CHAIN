@@ -1,0 +1,16 @@
+{
+  "name": "dead-space-publisher",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "build:epoch": "node src/build_epoch.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ethers": "^6.13.2",
+    "csv-parse": "^5.5.6",
+    "fs-extra": "^11.2.0"
+  }
+}

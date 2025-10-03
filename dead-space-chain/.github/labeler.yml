@@ -1,0 +1,14 @@
+contracts:
+  - 'contracts/**'
+publisher:
+  - 'publisher/**'
+relayer:
+  - 'relayer/**'
+explorer:
+  - 'explorer/**'
+sdk:
+  - 'sdk/**'
+docs:
+  - '**/*.md'
+ci:
+  - '.github/**'

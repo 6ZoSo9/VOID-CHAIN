@@ -1,0 +1,26 @@
+name: Release (Chain)
+
+on:
+  push:
+    tags:
+      - 'chain-v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Package chain bundle
+        run: |
+          zip -r dead-space-chain-bundle.zip contracts publisher relayer explorer sdk examples config-registry node -x '**/node_modules/**'
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dead-space-chain-bundle.zip
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
