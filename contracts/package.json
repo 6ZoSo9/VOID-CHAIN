@@ -1,10 +1,18 @@
 {
   "name": "void-contracts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "compile": "echo \"compile placeholder\"",
-    "test": "echo \"test placeholder\""
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run --network sepolia scripts/deploy.js"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
 }

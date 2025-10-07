@@ -49,7 +49,7 @@ void/
 
 ```bash
 # Clone
-git clone git@github.com:6ZoSo9/void.git
+git clone git@github.com:6ZoSo9/VOID-CHAIN and OBELISK-WALLET
 cd void
 
 # Wallet (placeholder)
