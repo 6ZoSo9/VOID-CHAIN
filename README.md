@@ -81,8 +81,7 @@ node index.js
 See `docs/VISION.md` and `docs/REWARD_SPEC.md` for details.
 
 ---
+© 2025 6ZoSo9 and contributors. All rights reserved.
+Licensed under the VOID Community License (VCL) v1.0. Redistribution, public hosting, or commercial use is prohibited without permission.
+See LICENSE and CLA.md.edits
 
-## Credits
-
-© 2025-10-07 VOID / Obelisk.  
-Created by **ZoSo** (6ZoSo9) • Co‑architect: **Oren**.
