@@ -1,1 +1,0 @@
-# Governance & Upgrades\n\n- Keep token/lockboxes immutable; use multisig+timelock for distributors & validator roots.\n- Replace inbox with light client/zk later; switch via timelock and config JSON.\n
