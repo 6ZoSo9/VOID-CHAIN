@@ -1,10 +1,9 @@
-# LEGAL / LICENSING
+# Legal / Licensing / Branding
 
-- **Code License:** MIT (see project root `LICENSE`).
-- **Brand & Lore License:** Creative Commons Attribution‑NonCommercial 4.0 International (CC BY‑NC 4.0).
-
-## Trademarks
-- We claim common‑law rights in the names **VOID**, **Obelisk Wallet**, and **VoidStones ($VOID)** through first public use on GitHub.
-- Use of ™ alongside names in documentation signals brand claim (e.g., VOID™).
-
-This repository establishes a public timestamp of authorship and brand identity.
+- Code: Licensed under **VOID Community License (VCL) v1.0** (see LICENSE).
+- Contributions: Governed by **CLA.md**.
+- Branding & Lore: © 6ZoSo9. Names and marks:
+  - VOID (chain)
+  - Obelisk Wallet (wallet)
+  - VoidStones ($VOID) (token)
+  Unapproved commercial use, redistribution, or forking is prohibited.
