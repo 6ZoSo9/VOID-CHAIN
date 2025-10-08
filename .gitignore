@@ -24,4 +24,4 @@ artifacts/
 \!.env.example
 
 # allow safe template
-\!.env.template
+!.env.template
