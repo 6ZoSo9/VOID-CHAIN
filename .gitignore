@@ -12,3 +12,13 @@ build/
 !.yarn/versions
 coverage/
 artifacts/
+
+# secrets
+.env
+.env.*
+\!.env.example
+
+# secrets
+.env
+.env.*
+\!.env.example

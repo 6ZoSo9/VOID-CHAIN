@@ -8,9 +8,16 @@
     "deploy:sepolia": "hardhat run --network sepolia scripts/deploy.js"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "dotenv": "^16.4.5",
-    "hardhat": "^2.22.10"
+    "@nomicfoundation/hardhat-ethers": "3.0.4",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.7.0",
+    "chai": "^6.2.0",
+    "dotenv": "^16",
+    "ethers": "^6",
+    "hardhat": "2.22.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2"
