@@ -85,3 +85,7 @@ See `docs/VISION.md` and `docs/REWARD_SPEC.md` for details.
 Licensed under the VOID Community License (VCL) v1.0. Redistribution, public hosting, or commercial use is prohibited without permission.
 See LICENSE and CLA.md.edits
 
+
+## License
+VOID Community License (VCL) v1.0 © 2025 6ZoSo9 and contributors.  
+See `LICENSE` for full terms.
