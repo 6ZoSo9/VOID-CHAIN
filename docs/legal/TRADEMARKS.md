@@ -1,14 +1,6 @@
-# Trademark Policy
+# VOID Trademarks & Branding
 
-Protected names/marks: **VOID**, **Obelisk Wallet**, **VoidStones ($VOID)**.
-
-You MAY:
-- Refer to the project and its software by name for nominative purposes.
-- Link to official repositories and documentation.
-
-You MAY NOT (without written permission):
-- Use the marks in product names, company names, domain names, or advertising.
-- Create confusingly similar names or logos.
-- Present forks/derivatives as official VOID/Obelisk software.
-
-Use of marks must not misrepresent affiliation or endorsement.
+The names and marks “VOID”, “Obelisk Wallet”, and “VoidStones ($VOID)” are proprietary to 6ZoSo9/VOID.
+No rights are granted to use these marks, except for nominative use to accurately reference this project
+as permitted by law. Do not use these marks in product names, company names, domain names, advertising,
+or promotions without express written permission.
