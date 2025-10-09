@@ -26,9 +26,9 @@ This commit serves as a timestamped public record of authorship and architecture
 
 ```
 void/
- ├─ obelisk-wallet/           # Wallet UI scaffold (placeholder)
+ ├─ OBELISK-WALLET/           # Wallet UI scaffold (placeholder)
  ├─ contracts/                # Token + rewards + governance contracts (skeleton)
- ├─ relayer/                  # Off-chain agent / relayer service (skeleton)
+ ├─ RELAYER/                  # Off-chain agent / RELAYER service (skeleton)
  └─ docs/
      ├─ README.md
      ├─ VISION.md
@@ -53,7 +53,7 @@ git clone git@github.com:6ZoSo9/VOID-CHAIN and OBELISK-WALLET
 cd void
 
 # Wallet (placeholder)
-cd obelisk-wallet
+cd OBELISK-WALLET
 yarn
 yarn dev
 
@@ -63,7 +63,7 @@ yarn
 yarn hardhat compile
 
 # Relayer (placeholder)
-cd ../relayer
+cd ../RELAYER
 yarn
 node index.js
 ```
